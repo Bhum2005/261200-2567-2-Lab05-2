@@ -22,7 +22,7 @@ public class Admin extends User {
         }
     }
     public void displayHappyBirthday() {
-        int age = LocalDate.now().getYear()-dob.getYear();
+        int age = LocalDate.now().getYear()-this.dob.getYear();
         if(isBirthday()) {
             System.out.println("Happy birthday " + this.Name + "! You are " + age + "!");
         }
